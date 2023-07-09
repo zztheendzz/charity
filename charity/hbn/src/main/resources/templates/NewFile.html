@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href ="@{http://www.springframework.org/tags/form}">
+</head>
+<body>
+	<tr th:each="user : ${userDonationList}">
+			<td th:text="${userDonationList.size()}"></td>
+<!-- 		<td th:text="${user.email}"></td> -->
+		<td th:text="${user.money}"></td>
+<!-- 		<td th:text="${user.user_name}"></td>
+		<td th:text="${user.password}"></td> -->
+	</tr>
+</body>
+</html>
